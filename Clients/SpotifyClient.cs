@@ -11,8 +11,8 @@ public sealed class SpotifyClient
 {
     private readonly HttpClient _httpClient;
     private readonly Uri _BaseAddress = new("https://api.spotify.com/v1");
-    private readonly string clientId = "a8ef9e7b019a4c10be798ca6353ccc13";
-    private readonly string clientSecret = "57620768049a41f3a6fcc1a75a75d04a";
+    private readonly string clientId = "";
+    private readonly string clientSecret = "";
     public sealed record AccessTokenResponse(string AccessToken, string TokenType, int ExpiresIn);
     public sealed record PlayListResponse(string Name, string Description, string Href, string Id, string Uri);
     private AccessTokenResponse? _accessTokenResponse;
