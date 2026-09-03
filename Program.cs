@@ -4,7 +4,7 @@ Console.WriteLine("Fetching data from Spotify API...");
 
 var spotifyClient = new SpotifyClient();
 
-var playListId = "37i9dQZF1E8PxBqRnXDihA";
+var playListId = "0vvXsWCC9xrXsKd4FyS8kM";
 
 var result = await spotifyClient.GetPlaylistAsync(playListId);
 

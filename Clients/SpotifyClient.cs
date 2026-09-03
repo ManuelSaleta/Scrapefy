@@ -42,7 +42,7 @@ public sealed class SpotifyClient
             new AuthenticationHeaderValue("Bearer", _accessTokenResponse!.AccessToken);
     }
 
-    public async Task<PlayListResponse> GetPlaylistAsync(string? id = "someId", string? endpoint = "/playlists", CancellationToken ct = default)
+    public async Task<PlayListResponse> GetPlaylistAsync(string? id = "someId", string? endpoint = "playlists", CancellationToken ct = default)
     {
         // no query params for now.
         return await Request<PlayListResponse>($"{endpoint}/{id}", HttpMethod.Get, ct);
